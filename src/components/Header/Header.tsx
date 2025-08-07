@@ -1,6 +1,10 @@
 import type { JSX } from "react";
 
-const Header = ({ numGuessesLeft }): JSX.Element => {
+const Header = ({
+  numGuessesLeft,
+}: {
+  numGuessesLeft: number;
+}): JSX.Element => {
   return (
     <header className="w-full sm:w-[85%] md:w-[70%] lg:w-[50%] xl:w-[40%] 2xl:w-1/3">
       <h3 className="text-[#F9F4DA] font-medium text-2xl text-center pb-2">
